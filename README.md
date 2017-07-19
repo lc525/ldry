@@ -10,5 +10,7 @@ Currently implemented functionality:
 - function overloading in C
 - string operation macros
 - debug macros
+- mark branches as likely/unlikely
+- bit operation macros
 - importing private kernel symbols macros
 - wrapper for pragmas to stop warnings on selected unused variables
