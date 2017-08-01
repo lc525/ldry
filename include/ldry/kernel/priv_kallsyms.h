@@ -1,3 +1,12 @@
+/**** Notice
+ * priv_kallsyms.h: ldry source code
+ *
+ * Copyright 2015-2017 Lucian Carata <lucian.carata@cl.cam.ac.uk>
+ *
+ * This file is part of the ldry open-source project: github.com/lc525/ldry;
+ * Its licensing is governed by the LICENSE file at the root of the project.
+ **/
+
 // When you include this file, it expects you to have defined KPRIV_INCLUDE to
 // point to the path of a header file containing private symbol requirements and
 // KSYM_TABLE_NAME(_) to replace the name of the X-macro inside that header

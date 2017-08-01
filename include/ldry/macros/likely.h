@@ -1,3 +1,12 @@
+/**** Notice
+ * likely.h: ldry source code
+ *
+ * Copyright 2015-2017 Lucian Carata <lucian.carata@cl.cam.ac.uk>
+ *
+ * This file is part of the ldry open-source project: github.com/lc525/ldry;
+ * Its licensing is governed by the LICENSE file at the root of the project.
+ **/
+
 #ifndef LDRY_MACROS_LIKELY_H_
 #define LDRY_MACROS_LIKELY_H_
 
