@@ -9,8 +9,10 @@ cmake_minimum_required(VERSION 3.2)
 
 set(header_files
     ${CMAKE_CURRENT_SOURCE_DIR}/include/ldry/macros/argstring.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/include/ldry/macros/unused.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/ldry/macros/bits.h
     ${CMAKE_CURRENT_SOURCE_DIR}/include/ldry/macros/foverload.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/ldry/macros/likely.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/ldry/macros/unused.h
     ${CMAKE_CURRENT_SOURCE_DIR}/include/ldry/kernel/priv_kallsyms.h
     ${CMAKE_CURRENT_SOURCE_DIR}/include/ldry/kernel/macros/debug.h
 )

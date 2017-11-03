@@ -1,5 +1,5 @@
 /**** Notice
- * priv_kallsyms.h: ldry source code
+ * priv_kallsyms.h: macros for importing linux private kernel symbols
  *
  * Copyright 2015-2017 Lucian Carata <lucian.carata@cl.cam.ac.uk>
  *
@@ -7,16 +7,15 @@
  * Its licensing is governed by the LICENSE file at the root of the project.
  **/
 
-// When you include this file, it expects you to have defined KPRIV_INCLUDE to
-// point to the path of a header file containing private symbol requirements and
-// KSYM_TABLE_NAME(_) to replace the name of the X-macro inside that header
-// file listing the private symbols (see example below).
-//
-// For some symbols to be found (global variables), the kernel needs to have
-// been compiled with CONFIG_KALLSYMS_ALL=y
-//
-//
-/* example:
+/* When you include this file, it expects you to have defined KPRIV_INCLUDE to
+ * point to the path of a header file containing private symbol requirements and
+ * KSYM_TABLE_NAME(_) to replace the name of the X-macro inside that header
+ * file listing the private symbols (see example below).
+ *
+ * For some symbols to be found (global variables), the kernel needs to have
+ * been compiled with CONFIG_KALLSYMS_ALL=y
+ *
+ * example for importing the "text_poke" kernel symbol:
 
    **file: example/require_kallsyms.h **
 
@@ -31,9 +30,9 @@
    #endif
 
    **file: kallsyms.h **
-  
+
    #include "example/require_kallsyms.h"
-  
+
    #define KPRIV_INCLUDE "example/require_kallsyms.h"
    #define KSYM_TABLE_NAME(_) PRIV_KSYM_TABLE(_)
    #include "ldry/kernel/priv_kallsyms.h"
